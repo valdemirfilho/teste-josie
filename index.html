@@ -1,15 +1,24 @@
 <!DOCTYPE html>
 <html lang="fr-fr">
 <head>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Josie Doula em Paris</title>
+  
+  <link rel="stylesheet" href="styles.css">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Playfair:ital,opsz,wght@0,5..1200,300..900;1,5..1200,300..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap" rel="stylesheet">
+
 </head>
 <body>
-  <div class="content">
+  <div id="content">
     <header id="header">
       <div class="Wrapper-logo">
-        <img src="./assets/header/logo-josie.svg" alt="logo Josie Doula em Paris" class="logo-img">
+        <div class="img-logo">
+          <img src="./assets/header/logo-josie.svg" alt="logo Josie Doula em Paris" class="logo-img">
+        </div>
         <h1>Josie Doula</h1>
       </div>
       <div class="social-media-header">
@@ -21,22 +30,33 @@
       <div class="bubble-hero">
         <img src="/assets/hero/josie-header-mensage.png" alt="Josie Doula em Paris" class="bubble-hero-img">
         <span>Oi, eu sou a Josie Leroux!</span>
-        <img src="./assets/hero/hand-header-mensage.png" alt="">
+        <img src="./assets/hero/hand-header-mensage.png" alt="imagem de mão" class="hand-hero-img">
       </div>
 
-      <h1>
-        Uma jornada de acolhimento, segurança e empoderamento
+      <h1 class="hero-title">
+        Uma <span class="hero-h1-span">jornada</span> de acolhimento, segurança e empoderamento
       </h1>
-      <p>
+      <p class="hero-subtitle">
         Toda mulher carrega dentro de si o instinto materno, mas o caminho nem sempre é claro. Entre emoções, expectativas e dúvidas, cada gestante precisa de apoio para viver essa experiência única. Você não está sozinha. Estou aqui para  te guiar.
       </p>
 
-      <div class="hero-whatsapp-btn ">
-        <a href="#contact" class="btn"><span>Entre em contato <img src="./assets/hero/whatsapp-icon.svg" alt="icone do whatsapp"></span></a>
-      </div>
-
-      <div class="hero-my-story-btn ">
-        <a href="#my-story" class="btn"><span>Conheça minha história <img src="./assets/hero/arrow-hero.svg" alt="Icone do arraow para baixo"></span></a>
+      <div class="wrapper-btn-hero">
+        <div class="hero-whatsapp-btn ">
+          <a href="#contact" class="btn">
+            <span>
+              Entre em contato 
+            </span>
+            <img src="./assets/hero/whatsapp-icon.svg" alt="icone do whatsapp" class="whatsapp-icon">
+          </a>
+        </div>
+  
+        <div class="hero-my-story-btn ">
+          <a href="#my-story" class="btn">
+            <span>Conheça minha história 
+              <img src="./assets/hero/arrow-hero.svg" alt="Icone do arraow para baixo">
+            </span>
+          </a>
+        </div>
       </div>
     </div>
 
@@ -265,10 +285,9 @@
         </div>
       </div>
 
-      <p>© 2025 Josie Doula. Todos os direitos reservados.</p>
+      <p>© 2025 Josie Doula em Paris. Todos os direitos reservados.</p>
       <span>Desenvolvido por Dilevete</span>
     </footer>
-
   </div>
 </body>
 </html>
