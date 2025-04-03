@@ -8,11 +8,12 @@
   /* header */
   --bg-header: #eed8c0;
   --bg-color-btn-whatsapp: #CF7956;
-
+  --bg-main: #F6EBDF;
   
   /* Text */
   --text-color-primary: #FFF;
   --text-color-secondary: #CF7956;
+  --text-color-tertiary: #6D4E5C;
   --text-color-hero:#D79B83;
   --text-color-hero-subtitle: #EFD9C1;
 
@@ -27,13 +28,9 @@
   --hero-subtitle: 300 16px/150% var(--font-family-03);
   --hero-btn-01: 500 14px/200% var(--font-family-03);
   --hero-bubble: 400 12px/100% var(--font-family-02);
-  /* --h2: 800 16px/140% var(--font-family);
-  --h3: 800 14px/140% var(--font-family);
-  --text-span: 600 14px/145% var(--font-family);
-  --text: 400 16px/140% var(--font-family);
-  --text-sm: 400 14px/160% var(--font-family); */
-
-  
+  --main-title: 400 32px/120% var(--font-family-01);
+  --main-text: 300 14px/150% var(--font-family-03);
+  --main-text-02: 300 14px/125% var(--font-family-03);
 }
 
 body{
@@ -53,8 +50,8 @@ body{
     "header"
     "hero"
     "main"
-    "footer";
- 
+    "footer"
+  ;
   align-items: center;
 }
 
@@ -92,7 +89,6 @@ header{
   background-repeat: no-repeat;
   
   width: 100%;
-  /* height: 512px; */
   height: 100vh;
   padding: 24px;
 
@@ -113,7 +109,6 @@ header{
     font: var(--hero-subtitle);
     color: var(--text-color-hero-subtitle);
   }
-
 }
 
 .wrapper-btn-hero{
@@ -221,6 +216,76 @@ header{
     height: 16px;
     border-radius: 50%;
   }
-  .
+}
+
+main{
+  grid-area: main;
+
+  width: 100%;
+  height: 100vh;
+  /* padding: 24px; */
+
+  display: flex;
+  flex-direction: column;
+  /* gap: 16px; */
+
+  background: var(--bg-main);
+
+}
+.img-about{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-top-left-radius: 0;
+  border-top-right-radius: 0;
+  border-bottom-left-radius: 150px;
+  border-bottom-right-radius: 150px;
+}
+
+#about{
+  padding: 24px;
+  
+}
+
+.wrapper-title-about{
+  display:flex;
+  flex-direction: column;
+  gap: 14px;
+}
+
+.main-title{
+  font: var(--main-title);
+  color: var(--text-color-secondary);
+}
+
+.main-title-italic{
+  font-style: italic;
+}
+
+.main-text{
+  font: var(--main-text);
+  color: var(--text-color-tertiary);
+}
+
+.main-text-highlight{
+  font-weight: 500;
+  color: var(--text-color-tertiary);
+}
+
+.wrapper-feature-about{
+  display: flex;
+  flex-direction: column;
+  /* gap: 8px; */
+}
+
+.feature-about{
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding-left: 8px;
+  padding-top: 16px;
+
+  font: var(--main-text-02);
+  color: var(--text-color-tertiary);
 }
 
