@@ -1,5 +1,5 @@
 header{
-  background: var(--bg-header);
+  background: var(--bg-04);
   
   grid-area: header;
 
@@ -21,7 +21,7 @@ header{
 
 .h1-header {
   font: var(--h2-02);
-  color: var(--text-color-secondary);
+  color: var(--text-color-02);
 }
 
 .social-media-icon{

@@ -29,7 +29,7 @@
   background: rgba(255, 255, 255, 0.05);
   backdrop-filter: blur(4px);
 
-  color: var(--text-color-primary);
+  color: var(--text-color-01);
 }
 
 .bubble-hero-img{
@@ -50,7 +50,7 @@
 
 .hero-title, .hero-text-italic{
   font: var(--h1-03);
-  color: var(--text-color-hero);
+  color: var(--text-color-04);
 
 }
 
@@ -60,7 +60,7 @@
 
 .hero-text{
   font: var(--p-02);
-  color: var(--text-color-hero-text);
+  color: var(--text-color-05);
 }
 
 .wrapper-btn-hero{
@@ -76,9 +76,9 @@
 .hero-whatsapp-btn {
   width: 80%;
 
-  background: var(--bg-color-btn-whatsapp);
+  background: var(--bg-02);
 
-  color: var(--text-color-primary);
+  color: var(--text-color-01);
   border-radius: 16px;
   border: none;
   padding: 8px 16px;
@@ -88,15 +88,6 @@
 
 .hero-btn-span{
   font: var(--p-04);
-}
-
-.btn{
-  color: var(--text-color-primary);
-  text-decoration: none;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  gap: 8px;
 }
 
 .whatsapp-icon{
@@ -124,7 +115,7 @@
 }
 
 .btn{
-  color: var(--text-color-primary);
+  color: var(--text-color-01);
   text-decoration: none;
   display: flex;
   align-items: center;

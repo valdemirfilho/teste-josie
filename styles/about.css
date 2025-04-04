@@ -2,9 +2,6 @@
   padding: 24px 24px 72px;
   display: flex;
   flex-direction: column;
-
-  background: var(--bg-primary);
-
 }
 
 .img-about{
@@ -18,7 +15,7 @@
 }
 
 .text-title, .text-title-italic{
-  color: var(--text-color-secondary);
+  color: var(--text-color-02);
 }
 
 .wrapper-01-about{
@@ -29,12 +26,12 @@
 
 .text-about{
   font: var(--p-02);
-  color: var(--text-color-tertiary);
+  color: var(--text-color-03);
 }
 
 .text-about-highlight{
   font: var(--p-03);
-  color: var(--text-color-tertiary);
+  color: var(--text-color-03);
 }
 
 
@@ -52,5 +49,5 @@
 }
 .text-feature{
   font: var(--p-01);
-  color: var(--text-color-tertiary);
+  color: var(--text-color-03);
 }

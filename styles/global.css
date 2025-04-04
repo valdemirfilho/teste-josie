@@ -6,23 +6,29 @@
 
 :root{
   /* bg */
-  /* --bg-main: #F6EBDF; */
-  --bg-primary: #F6EBDF;
+  --bg-01: #fff;
+  --bg-02: #CF7956;
+  --bg-03: #F7ECE0;
+  --bg-04: #eed8c0;
+  --bg-05: #EFD9C1;
+
+
+  /* --bg-primary: #F6EBDF;
   --bg-secondary:#EFD9C1;
   --bg-tertiary: #F7ECE0;
-  /* --bg-main-service-card: #EFD9C1; */
   --bg-header: #eed8c0;
-  --bg-color-btn-whatsapp: #CF7956;
+  --bg-color-btn-whatsapp: #CF7956; */
 
   
   /* Text */
-  --text-color-primary: #FFF;
-  --text-color-secondary: #CF7956;
-  --text-color-tertiary: #6D4E5C;
-  --text-color-hero:#D79B83;
-  --text-color-hero-text: #EFD9C1;
-  --text-color-hero-text: #EFD9C1;
-  --text-color-services: #6D2E2E;
+  --text-color-01: #FFF;
+  --text-color-02: #CF7956;
+  --text-color-03: #6D4E5C;
+  --text-color-04:#D79B83;
+  --text-color-05: #EFD9C1;
+  --text-color-06: #6D2E2E;
+  --text-color-07: #888D84;
+  
 
   /* font */
   --ff-01: "Playfair", serif;
@@ -71,6 +77,10 @@
 
   --p-05: 400 12px/100% var(--ff-02);
   /* --hero-bubble: 400 12px/100% var(--font-family-02); */
+
+  --p-06: 300 12px/125% var(--ff-02);
+  --p-07: 400 12px/125% var(--ff-03);
+
   
 
   /* btn */
@@ -80,7 +90,7 @@
 }
 
 body{
-  background:black;
+  background: var(--bg-03);
   width: 100vw;
   height: 100%;
   display: flex;
@@ -88,8 +98,6 @@ body{
 }
 
 #content{
-  background: var(--bg-primary);
-
   max-width: 375px;
   height: 100%;
 
@@ -113,7 +121,7 @@ main{
   display: flex;
   flex-direction: column;
 
-  background: var(--bg-main);
+  background: var(--bg-03);
 }
 
 #content-main{
@@ -123,7 +131,7 @@ main{
 
 .text-title, .text-title-italic {
   font: var(--h1-04);
-  color: var(--text-color-secondary);
+  color: var(--text-color-02);
 }
 
 .text-title-italic{

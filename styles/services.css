@@ -2,7 +2,7 @@
   width: 100%;
   height: 100%;
   
-  background: var(--bg-primary);
+  background: var(--bg-03);
 
   display: flex;
   flex-direction: column;
@@ -10,7 +10,7 @@
 }
 
 .wrapper-myMission{
-  background: var(--text-color-secondary);
+  background: var(--text-color-02);
   height: 300px;
   display: flex;
   align-items: center;
@@ -29,7 +29,7 @@
 
 .text-title-white, .text-title-white-italic{
   font: var(--h1-01);
-  color: var(--text-color-primary);
+  color: var(--text-color-01);
 }
 
 .text-title-white-italic{
@@ -38,7 +38,7 @@
 
 .text-myMission{
   font: var(--p-01);
-  color: var(--text-color-hero-text);
+  color: var(--text-color-05);
 }
 
 .wrapper-services{
@@ -51,7 +51,7 @@
 }
 
 .wrapper-card-service{
-  background: var(--bg-secondary);
+  /* background: var(--bg-03); */
   border-radius: 16px 16px 0px 0px;
 }
 
@@ -70,12 +70,12 @@
 
 .subtitle-card-service{
   font: var(--h3-02);
-  color: var(--text-color-secondary);
+  color: var(--text-color-02);
 }
 
 .text-card-service{
   font: var(--p-03);
-  color: var(--text-color-services);
+  color: var(--text-color-06);
   width: 200px;
 }
 
@@ -88,7 +88,7 @@
 .btn-card-service{
   width: 150px;
   height: 32px;
-  background: var(--bg-color-btn-whatsapp);
+  background: var(--bg-02);
   display: flex;
   align-items: center;
   justify-content: center;
@@ -99,7 +99,7 @@
   font: var(--btn-01);
 
   >span{
-    color: var(--text-color-primary);
+    color: var(--text-color-01);
     font: var(--btn-01);
 
   }
