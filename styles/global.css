@@ -28,6 +28,9 @@
   --text-color-05: #EFD9C1;
   --text-color-06: #6D2E2E;
   --text-color-07: #888D84;
+  --text-color-08: rgba(255, 255, 255, 0.50);
+
+  
   
 
   /* font */
@@ -80,6 +83,7 @@
 
   --p-06: 300 12px/125% var(--ff-02);
   --p-07: 400 12px/125% var(--ff-03);
+  --p-08: 300 10px/125% var(--ff-03);
 
   
 
@@ -92,7 +96,7 @@
 body{
   background: var(--bg-03);
   width: 100vw;
-  height: 100%;
+  height: 100vh;
   display: flex;
   justify-content: center;
 }
