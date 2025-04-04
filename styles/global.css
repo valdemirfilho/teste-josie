@@ -12,14 +12,6 @@
   --bg-04: #eed8c0;
   --bg-05: #EFD9C1;
 
-
-  /* --bg-primary: #F6EBDF;
-  --bg-secondary:#EFD9C1;
-  --bg-tertiary: #F7ECE0;
-  --bg-header: #eed8c0;
-  --bg-color-btn-whatsapp: #CF7956; */
-
-  
   /* Text */
   --text-color-01: #FFF;
   --text-color-02: #CF7956;
@@ -30,9 +22,6 @@
   --text-color-07: #888D84;
   --text-color-08: rgba(255, 255, 255, 0.50);
 
-  
-  
-
   /* font */
   --ff-01: "Playfair", serif;
   --ff-02: "Poppins", sans-serif;
@@ -41,56 +30,27 @@
 
   /* h1 */
   --h1-01: 400 28px/125% var(--ff-01);
-  /*--h1-primary: 400 28px/100% var(--font-family-01);*/
-  /* --h1-primary-services: 400 28px/125% var(--font-family-01); */
   --h1-02: 400 40px/100% var(--ff-01);
-  /* --hero-title: 400 40px/100% var(--font-family-01); */
   --h1-03: 400 32px/120% var(--ff-01);
-  /* --main-title: 400 32px/120% var(--font-family-01);*/
   --h1-04: 400 24px/100% var(--ff-01);
-
-
   /* h2 */
   --h2-01: 400 28px/100% var(--ff-01);
-  /* --h1-primary-myMission: 400 24px/100% var(--font-family-01); */
   --h2-02: 400 22px/100% var(--ff-01);
   --h2-03: 400 20px/125% var(--ff-01);
-
-
-
   /* h3 */
   --h3-01: 300 16px/150% var(--ff-03);
-  /* --hero-subtitle: 300 16px/150% var(--ff-03);*/
   --h3-02: 500 16px/125% var(--ff-03);
-  /*--main-subtitle-card-service: 500 18px/125% var(--ff-03); */
-
-  
   /* p */
   --p-01: 300 14px/125% var(--ff-03);
-  /* --main-text-02: 300 14px/125% var(--font-family-03);*/
-
   --p-02: 300 14px/150% var(--ff-03);
-  /* --main-text: 300 14px/150% var(--font-family-03); */
-
   --p-03: 400 14px/150% var(--ff-04);
-  /*--main-text-card-service: 400 14px/150% var(--font-family-04); */
-
   --p-04: 500 14px/200% var(--ff-03);
-  /* --hero-btn-01: 500 14px/200% var(--font-family-03); */
-
   --p-05: 400 12px/100% var(--ff-02);
-  /* --hero-bubble: 400 12px/100% var(--font-family-02); */
-
   --p-06: 300 12px/125% var(--ff-02);
   --p-07: 400 12px/125% var(--ff-03);
   --p-08: 300 10px/125% var(--ff-03);
-
-  
-
   /* btn */
   --btn-01: 700 12px/150% var(--ff-04);
-
-  /* --main-text-btn-card-service: 500 12px/150% var(--font-family-04); */
 }
 
 body{
@@ -119,7 +79,6 @@ body{
 
 main{
   grid-area: main;
-
   width: 100%;
 
   display: flex;

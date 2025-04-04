@@ -51,7 +51,6 @@
 }
 
 .wrapper-card-service{
-  /* background: var(--bg-03); */
   border-radius: 16px 16px 0px 0px;
 }
 
@@ -101,11 +100,10 @@
   >span{
     color: var(--text-color-01);
     font: var(--btn-01);
-
   }
+}
 
-  .img-btn-card-service{
-    width: 16px;
-    height: 16px;
-  }
+.img-btn-card-service{
+  width: 16px;
+  height: 16px;
 }
