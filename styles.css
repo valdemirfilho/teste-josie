@@ -9,21 +9,25 @@
   --bg-header: #eed8c0;
   --bg-color-btn-whatsapp: #CF7956;
   --bg-main: #F6EBDF;
+  --bg-main-service-card: #EFD9C1;
   
   /* Text */
   --text-color-primary: #FFF;
   --text-color-secondary: #CF7956;
   --text-color-tertiary: #6D4E5C;
   --text-color-hero:#D79B83;
-  --text-color-hero-subtitle: #EFD9C1;
+  --text-color-subtitle: #EFD9C1;
+  --text-color-services: #6D2E2E;
 
   /* font */
   --font-family-01: "Playfair", serif;
   --font-family-02: "Poppins", sans-serif;
   --font-family-03: "Ubuntu", sans-serif;
-  --font-family-04: "Inter", sans-serif;
+  --font-family-04: 'Inter', sans-serif;";
 
-  --h1-logo: 400 28px/100% var(--font-family-01);
+  --h1-primary: 400 28px/100% var(--font-family-01);
+  --h1-primary-services: 400 28px/125% var(--font-family-01);
+  --h1-primary-myMission: 400 24px/100% var(--font-family-01);
   --hero-title: 400 40px/100% var(--font-family-01);
   --hero-subtitle: 300 16px/150% var(--font-family-03);
   --hero-btn-01: 500 14px/200% var(--font-family-03);
@@ -31,21 +35,27 @@
   --main-title: 400 32px/120% var(--font-family-01);
   --main-text: 300 14px/150% var(--font-family-03);
   --main-text-02: 300 14px/125% var(--font-family-03);
+  --main-subtitle-card-service: 500 18px/125% var(--font-family-03);
+  --main-text-card-service: 400 14px/150% var(--font-family-04);
+  --main-text-btn-card-service: 500 12px/150% var(--font-family-04);
 }
 
 body{
   background:black;
   width: 100vw;
   height: 100vh;
-}
+  display: flex;
+  justify-content: center;}
 
 #content{
   background: red ;
 
   max-width: 375px;
+  height: 100%;
 
   display: grid;
   grid-template-rows: auto auto auto auto;
+  grid-template-columns: 1fr;
   grid-template-areas: 
     "header"
     "hero"
@@ -75,7 +85,7 @@ header{
   justify-content: center;
 
   >h1 {
-    font: var(--h1-logo);
+    font: var(--h1-primary);
     color: var(--text-color-secondary);
   }
 }
@@ -107,7 +117,7 @@ header{
 
   .hero-subtitle{
     font: var(--hero-subtitle);
-    color: var(--text-color-hero-subtitle);
+    color: var(--text-color-subtitle);
   }
 }
 
@@ -222,16 +232,19 @@ main{
   grid-area: main;
 
   width: 100%;
-  height: 100vh;
-  /* padding: 24px; */
 
   display: flex;
   flex-direction: column;
-  /* gap: 16px; */
 
   background: var(--bg-main);
 
 }
+
+#content-main{
+  height: 100%;
+  width: 100%;
+}
+
 .img-about{
   width: 100%;
   height: 100%;
@@ -243,8 +256,9 @@ main{
 }
 
 #about{
-  padding: 24px;
-  
+  padding: 0 24px 72px;
+  display: flex;
+  flex-direction: column;
 }
 
 .wrapper-title-about{
@@ -275,7 +289,6 @@ main{
 .wrapper-feature-about{
   display: flex;
   flex-direction: column;
-  /* gap: 8px; */
 }
 
 .feature-about{
@@ -289,3 +302,122 @@ main{
   color: var(--text-color-tertiary);
 }
 
+#myMission{
+  background: var(--text-color-secondary);
+  padding: 0 24px;
+  height: 400px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  color: var(--text-color-primary);
+}
+
+.wrapper-text-myMission{
+  padding: 0 24px;
+
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.h1-primary-myMission{
+  font: var(--h1-primary-myMission);
+  color: var(--text-color-primary);
+}
+
+.h1-primary-myMission-highlight{
+  font-style: italic;
+}
+
+.p-primary-mission{
+  font: var(--main-text);
+  color: var(--text-color-subtitle);
+}
+
+#services{
+  width: 100%;
+  
+  padding: 24px;
+
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.h1-primary-services{
+  font: var(--h1-primary-services);
+  color: var(--text-color-secondary);
+
+}
+
+.wrapper-services{
+  display: flex;
+  flex-direction: column;
+  gap: 16px; 
+
+  width: 100%;
+}
+
+.card-services{
+  background: var(--bg-main-service-card);
+  border-radius: 16px 16px 0px 0px;
+  padding-bottom: 16px;
+}
+
+.main-card-services{
+  padding: 16px;
+  gap: 16px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.wrapper-text-card-service{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.subtitle-card-service{
+  font: var(--main-subtitle-card-service);
+  color: var(--text-color-secondary);
+}
+
+.text-card-service{
+  font: var(--main-text-card-service);
+  color: var(--text-color-services);
+  width: 200px;
+}
+
+.icon-services{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.btn-card-service{
+  width: 150px;
+  height: 32px;
+  background: var(--bg-color-btn-whatsapp);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  
+  text-decoration: none;
+  border-radius: 16px;
+  font: var(--main-text-btn-card-service);
+
+  >span{
+    color: var(--text-color-primary);
+    font: var(--main-text-btn-card-service);
+
+  }
+
+  .img-btn-card-service{
+    width: 16px;
+    height: 16px;
+  }
+}

@@ -1,0 +1,30 @@
+header{
+  background: var(--bg-header);
+  
+  grid-area: header;
+
+  max-width: 375px;
+  padding: 10px 24px;
+
+  display: flex;
+  justify-content:space-between;
+  align-items: center;
+}
+
+.Wrapper-logo{
+  display: flex;
+  gap: 8px;
+  align-items: center;
+  justify-content: center;
+
+}
+
+.h1-header {
+  font: var(--h2-02);
+  color: var(--text-color-secondary);
+}
+
+.social-media-icon{
+  width: 24px;
+  height: 24px;
+}
