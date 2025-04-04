@@ -1,0 +1,63 @@
+#infoPregnant {
+  position: relative;
+  width: 100%;
+  max-width: 1200px; /* Limita a largura da seção */
+  margin: 0 auto; /* Centraliza a seção horizontalmente */
+  height: auto; /* Ajusta a altura automaticamente */
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.bg-video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* Garante que o vídeo cubra toda a área */
+  z-index: 0; /* Coloca o vídeo no plano de fundo */
+}
+
+#content-infoPregnant {
+  position: relative;
+  z-index: 1; /* Coloca o conteúdo acima do vídeo */
+  text-align: center;
+  color: var(--text-color-primary); /* Garante contraste com o vídeo */
+  background: rgba(0, 0, 0, 0.5); /* Adiciona um fundo semitransparente para melhorar a legibilidade */
+   max-width: 100%; /* Limita a largura do conteúdo */
+  margin: 0 auto; /* Centraliza horizontalmente */
+  padding: 56px 24px; /* Adiciona espaçamento interno */
+}
+
+.text-title{
+  font: var(--h1-04);
+  color: var(--text-color-secondary);
+  padding-bottom: 16px;
+}
+
+.text-title-italic{
+  font-style: italic;
+}
+
+.text-infoPregnant{
+  font: var(--h3-01);
+  color: var(--text-color-hero-text);
+}
+
+.subtitle-infoPregnant{
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.text-infoPregnant-italic{
+  font: var(--h3-01);
+  color: var(--text-color-primary);
+
+  font-style: italic;
+  display: flex;
+  justify-content: center;
+  gap: 18px;
+}

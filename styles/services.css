@@ -1,0 +1,111 @@
+#services{
+  width: 100%;
+  height: 100%;
+  
+  background: var(--bg-primary);
+
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.wrapper-myMission{
+  background: var(--text-color-secondary);
+  height: 300px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.wrapper-text-myMission{
+  width: 272px;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 16px;
+}
+
+.text-title-white, .text-title-white-italic{
+  font: var(--h1-01);
+  color: var(--text-color-primary);
+}
+
+.text-title-white-italic{
+  font-style: italic;
+}
+
+.text-myMission{
+  font: var(--p-01);
+  color: var(--text-color-hero-text);
+}
+
+.wrapper-services{
+  display: flex;
+  flex-direction: column;
+  gap: 16px; 
+  padding: 24px;
+
+  width: 100%;
+}
+
+.wrapper-card-service{
+  background: var(--bg-secondary);
+  border-radius: 16px 16px 0px 0px;
+}
+
+.main-card-service{
+  padding: 16px;
+  gap: 16px;
+  display: flex;
+  flex-direction: column;
+}
+
+.wrapper-text-card-service{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.subtitle-card-service{
+  font: var(--h3-02);
+  color: var(--text-color-secondary);
+}
+
+.text-card-service{
+  font: var(--p-03);
+  color: var(--text-color-services);
+  width: 200px;
+}
+
+.icon-services{
+  width: 100%;
+  height: 100%;
+  object-fit: cover; 
+}
+
+.btn-card-service{
+  width: 150px;
+  height: 32px;
+  background: var(--bg-color-btn-whatsapp);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  
+  text-decoration: none;
+  border-radius: 16px;
+  font: var(--btn-01);
+
+  >span{
+    color: var(--text-color-primary);
+    font: var(--btn-01);
+
+  }
+
+  .img-btn-card-service{
+    width: 16px;
+    height: 16px;
+  }
+}
