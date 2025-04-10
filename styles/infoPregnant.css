@@ -1,6 +1,6 @@
 #infoPregnant {
   position: relative;
-  width: 100%;
+  width: 375px;
   max-width: 1200px; /* Limita a largura da seção */
   margin: 0 auto; /* Centraliza a seção horizontalmente */
   height: auto; /* Ajusta a altura automaticamente */

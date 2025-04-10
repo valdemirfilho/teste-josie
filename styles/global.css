@@ -11,6 +11,11 @@
   --bg-03: #F7ECE0;
   --bg-04: #eed8c0;
   --bg-05: #EFD9C1;
+  --bg-06:#D79B83;
+  --bg-07: #7a4f3f;
+  --bg-08: #ccc;
+  --bg-09:rgb(216, 6, 6);
+
 
   /* Text */
   --text-color-01: #FFF;
@@ -55,7 +60,7 @@
 
 body{
   background: var(--bg-03);
-  width: 100vw;
+  width: 100%;
   height: 100vh;
   display: flex;
   justify-content: center;
