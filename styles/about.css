@@ -1,8 +1,9 @@
 #about{
-  padding: 24px 24px 72px;
+  padding: 24px;
   display: flex;
   flex-direction: column;
-  width: 375px;
+  width: 100%;
+  max-width: 375px;
 }
 
 .img-about{
@@ -15,14 +16,15 @@
   border-bottom-right-radius: 150px;
 }
 
-.text-title, .text-title-italic{
-  color: var(--text-color-02);
-}
-
-.wrapper-01-about{
+.wrapper-about-01{
   display:flex;
   flex-direction: column;
-  gap: 14px;
+  gap: 16px;
+}
+
+.wrapper-title{
+  display: flex;
+  flex-direction: column;
 }
 
 .text-about{
@@ -35,7 +37,7 @@
   color: var(--text-color-03);
 }
 
-.wrapper-feature-about{
+.wrapper-about-feature{
   display: flex;
   flex-direction: column;
 }
@@ -50,4 +52,4 @@
 .text-feature{
   font: var(--p-01);
   color: var(--text-color-03);
-}
+} */
