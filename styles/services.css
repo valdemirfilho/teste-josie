@@ -18,21 +18,21 @@
   gap: 16px;
 
   >h1, p{
-    width: 272px
+    width: 272px;
   }
 }
 
 .text-title-white, .text-title-white-italic{
-  font: var(--h1-01);
+  font: var(--h1-03);
   color: var(--text-color-01);
 }
 
-.text-title-white-italic{
+.text-title-white .text-title-white-italic{
   font-style: italic;
 }
 
 .text-myMission{
-  font: var(--p-01);
+  font: var(--p-04);
   color: var(--text-color-05);
 }
 
@@ -73,20 +73,15 @@
   padding: 0 16px;
 }
 
-.subtitle-card-service{
-  font: var(--h3-02);
-  color: var(--text-color-02);
-}
-
 .text-card-service{
-  font: var(--p-03);
+  font: var(--p-06);
   color: var(--text-color-06);
   width: 200px;
   margin-left: 16px;
 }
 
 .subtitle-card-service{
-  font: var(--h3-02);
+  font: var(--p-05);
   color: var(--text-color-02);
 }
 
@@ -101,15 +96,12 @@
   margin-left: 16px;
   border-radius: 16px;
 
-  
   text-decoration: none;
-  font: var(--btn-01);
   background: var(--bg-02); 
 
-
   >span{
-    color: var(--text-color-01);
-    font: var(--btn-01);
+    color: var(--text-color-05);
+    font: var(--btn-02);
   }
 }
 
@@ -119,31 +111,27 @@
   }
 
   .wrapper-myMission{
-    padding: 64px 48px;
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 32px;
-    height: 100%;
-    gap: 50px;
-
     >h1, p{
-      width: 100%;
-      text-align: center;
+      width: 768px;
     }
   }
 
   .text-title-white, .text-title-white-italic{
-    font: var(--h1-01);
+    font: var(--h1-03);
+  }
+
+  .text-card-service{
+    width: 270px;
   }
 
   .text-myMission{
-    font: var(--p-02);
+    font: var(--p-01);
   }
 
   .wrapper-services{
     max-width: 1000px;
-    padding: 96px;
-    gap: 64px;
+    padding: 48px;
+    gap: 32px;
 
     >h1{
       text-align: center;
@@ -152,8 +140,8 @@
 
   .wrapper-card-service{
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 16px;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 32px;
   }
 }
 

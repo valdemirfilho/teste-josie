@@ -26,25 +26,18 @@ footer{
 .social-footer{
   display: flex;
   align-items: center;
-  gap: 16px;
-
-  font: var(--p-01);
+  gap: 6px;
 }
 
-.social-footer a{
+.social-footer a, .company-id{
   text-decoration: none;
   color: var(--text-color-05);
-  font: var(--p-01);
+  font: var(--p-12);
 }
 
 .social-media-icon{
   width: 18px;
   height: 18px;
-}
-
-.company-id{
-  color: var(--text-color-05);
-  font: var(--p-01);
 }
 
 .copyright-border{
@@ -59,19 +52,18 @@ footer{
   padding: 24px;
  
   color: var(--text-color-05);
-  font: var(--p-01);
+  font: var(--p-12);
 
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   text-align: center;
-  gap: 8px;
 }
 
 .dev-site{
   color: var(--text-color-08);
-  font: var(--p-08);
+  font: var(--p-12);
 }
 
 .dev-site a{
@@ -92,7 +84,7 @@ footer{
   }
 
   .footer-logo {
-    width: 500px;
+    width: 400px;
     height: 100%;
   }
 
@@ -101,6 +93,6 @@ footer{
     align-items: center;
     gap: 6px;
   
-    font: var(--p-01);
+    font: var(--p-04);
   }
 }

@@ -13,12 +13,12 @@
   max-width: 375px;
   height: 512px;
   padding: 24px;
-  display: flex
-;
+  display: flex;
   flex-direction: column;
   gap: 16px;
   justify-content: space-around;
 }
+
 .bubble-hero{
   max-width: 210px;
   display: flex;
@@ -40,7 +40,7 @@
 }
 
 .hero-h1-span-hand{
-  font: var(--p-05);
+  font: var(--p-02);
 }
 
 .hand-hero-img{
@@ -56,7 +56,7 @@
 }
 
 .hero-title, .hero-text-italic{
-  font: var(--h1-03);
+  font: var(--h1-02);
   color: var(--text-color-04);
 }
 
@@ -65,7 +65,7 @@
 }
 
 .hero-text{
-  font: var(--p-02);
+  font: var(--p-01);
   color: var(--text-color-05);
 }
 
@@ -93,8 +93,8 @@
   cursor: pointer;
 }
 
-.hero-btn-span{
-  font: var(--p-04);
+.hero-btn-span, .hero-btn-02-span{
+  font: var(--btn-01);
 }
 
 .whatsapp-icon{
@@ -125,16 +125,16 @@
 
 @media (min-width: 768px) and (max-width: 1000px) {
   .wrapper-hero{
-    max-width: 512px;
-    min-height: 535px;
+    max-width: 548px;
+    min-height: 500px;
+    padding: 48px;
   }
 
   .wrapper-btn-hero{
     flex-direction: row;
   }
-  
 }
 
 @media (min-width: 1024px) {
   
-} */
+}

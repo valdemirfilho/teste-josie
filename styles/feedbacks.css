@@ -1,16 +1,15 @@
 #feedbacks{
   max-width: 375px;
   width: 100%;
-  padding: 48px 24px;
+  padding: 48px 36px;
 
   display: flex;
   flex-direction: column;
   gap: 16px;
-  align-items: center;
 }
 
 .subtitle-feedbacks{
-  font: var(--p-01);
+  font: var(--p-04);
   color: var(--text-color-06);
 }
 
@@ -40,7 +39,7 @@
 }
 
 .text-card-feedback{
-  font: var(--p-06);
+  font: var(--p-09);
   color: var(--text-color-06);
   text-align: center;
 }
@@ -52,6 +51,12 @@
   gap: 8px;
 }
 
+.user-feedback{
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+}
+
 .img-user-feedback img{
   width: 32px;
   height: 32px;
@@ -59,27 +64,24 @@
 }
 
 .text-user-feedback{
-  font: var(--p-07);
-  color: var(--text-color-0);
+  font: var(--p-10);
+  color: var(--text-color-06);
 }
 
 .text-02-user-feedback{
-  font: var(--p-07);
+  font: var(--p-09);
   color: var(--text-color-07);
 }
-
 
 @media (min-width: 768px) and (max-width: 1000px) {
   #feedbacks{
     max-width: 1000px;
     padding: 64px 48px;
     gap: 32px;
-    
   }
   
   .wrapper-feedbacks{
     flex-direction: row;
-    flex-wrap: wrap;
     gap: 16px;
   }
 }

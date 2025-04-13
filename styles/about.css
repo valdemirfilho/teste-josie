@@ -2,7 +2,6 @@
   padding: 24px;
   display: flex;
   flex-direction: column;
-  gap: 16px;
   
   width: 100%;
   max-width: 375px;
@@ -39,7 +38,7 @@
 }
 
 .text-about{
-  font: var(--p-02);
+  font: var(--p-01);
   color: var(--text-color-03);
 }
 
@@ -57,10 +56,9 @@
 }
 
 .text-feature{
-  font: var(--p-01);
+  font: var(--p-04);
   color: var(--text-color-03);
 } 
-
 
 @media (min-width: 768px) and (max-width: 1000px) {
   #about{
@@ -75,8 +73,7 @@
   .wrapper-title{
     flex-direction: row;
     gap: 8px;
-    text-align: center;
-    justify-content: center;
+    padding: 32px 48px;
   }
   
   .content-about{
@@ -92,12 +89,19 @@
     height: auto;
   }
 
+  .wrapper-about-feature{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 8px;
+  }
+
   .feature-about{
     padding: 0;
   }
 
   .text-feature{
-    font: var(--p-02);
+    font: var(--p-01);
   } 
 }
 
