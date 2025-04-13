@@ -1,5 +1,7 @@
 #hero{
   grid-area: hero;
+  height: 100%;
+  min-height: 550px;
   
   background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(/assets/hero/hero-bg.jpg);
   background-size: cover;
@@ -122,6 +124,14 @@
 }
 
 @media (min-width: 768px) and (max-width: 1000px) {
+  .wrapper-hero{
+    max-width: 512px;
+    min-height: 535px;
+  }
+
+  .wrapper-btn-hero{
+    flex-direction: row;
+  }
   
 }
 

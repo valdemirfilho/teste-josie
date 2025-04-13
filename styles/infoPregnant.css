@@ -60,3 +60,27 @@
   justify-content: center;
   gap: 18px;
 }
+
+@media (min-width: 768px) and (max-width: 1000px) {
+  #infoPregnant {
+    width: 100%;
+  }
+
+  #content-infoPregnant{
+    padding: 92px
+  }
+
+  .wrapper-text-info{
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+  }
+
+  .subtitle-infoPregnant{
+  }
+
+  .text-infoPregnant-italic{
+    font: var(--h3-03);
+  }
+  
+}

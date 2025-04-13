@@ -4,12 +4,7 @@
   height: 100%;
   
   background: var(--bg-03);
-
-  /* display: flex;
-  flex-direction: column;
-  gap: 16px; */
 }
-
 
 .wrapper-myMission{
   background: var(--text-color-02);
@@ -25,18 +20,7 @@
   >h1, p{
     width: 272px
   }
-
 }
-
-/* .wrapper-text-myMission{
-  width: 272px;
-
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  gap: 16px;
-} */
 
 .text-title-white, .text-title-white-italic{
   font: var(--h1-01);
@@ -127,4 +111,52 @@
     color: var(--text-color-01);
     font: var(--btn-01);
   }
+}
+
+@media (min-width: 768px) and (max-width: 1000px) {
+  #services{
+    max-width: 1000px;
+  }
+
+  .wrapper-myMission{
+    padding: 64px 48px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 32px;
+    height: 100%;
+    gap: 50px;
+
+    >h1, p{
+      width: 100%;
+      text-align: center;
+    }
+  }
+
+  .text-title-white, .text-title-white-italic{
+    font: var(--h1-01);
+  }
+
+  .text-myMission{
+    font: var(--p-02);
+  }
+
+  .wrapper-services{
+    max-width: 1000px;
+    padding: 96px;
+    gap: 64px;
+
+    >h1{
+      text-align: center;
+    }
+  }
+
+  .wrapper-card-service{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 16px;
+  }
+}
+
+@media (min-width: 1024px) {
+  
 }

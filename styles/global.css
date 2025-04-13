@@ -36,7 +36,7 @@
   /* h1 */
   --h1-01: 400 28px/125% var(--ff-01);
   --h1-02: 400 40px/100% var(--ff-01);
-  --h1-03: 400 32px/120% var(--ff-01);
+  --h1-03: 400 32px/100% var(--ff-01);
   --h1-04: 400 24px/100% var(--ff-01);
   /* h2 */
   --h2-01: 400 28px/100% var(--ff-01);
@@ -45,6 +45,7 @@
   /* h3 */
   --h3-01: 300 16px/150% var(--ff-03);
   --h3-02: 500 16px/125% var(--ff-03);
+  --h3-03: 300 18px/200% var(--ff-03);
   /* p */
   --p-01: 300 14px/125% var(--ff-03);
   --p-02: 300 14px/150% var(--ff-03);
@@ -54,7 +55,6 @@
   --p-06: 300 12px/125% var(--ff-02);
   --p-07: 400 12px/125% var(--ff-03);
   --p-08: 300 10px/125% var(--ff-03);
-  --p-09: 300 18  px/150% var(--ff-03);
 
   /* btn */
   --btn-01: 700 12px/150% var(--ff-04);
@@ -117,31 +117,45 @@ h1, h2, h3, p, a, span{
 }
 
 @media (min-width: 768px)and (max-width: 1000px) {
+  :root{
+    --h1-01: 400 40px/125% var(--ff-01);
+    --h1-03: 400 42px/100% var(--ff-01);
+    --h1-04: 400 40px/100% var(--ff-01);
+    --h3-01: 300 18px/125% var(--ff-03);
+    
+    --p-01: 300 18px/125% var(--ff-03);
+    --p-02: 300 18px/150% var(--ff-03);
+    --p-03: 400 18px/150% var(--ff-04);
+    --p-04: 500 16px/200% var(--ff-03);
+    --p-06: 300 14px/125% var(--ff-02);
+
+
+  }
+
   #content {
     width: 100%;
     max-width: 1000px;
   }
 
   main {
-    flex-direction: row;
-    gap: 16px;
+    /* gap: 16px; */
   }
 }
 
-/* @media (min-width: 1024px) {
+@media (min-width: 1024px) {
   #content {
     max-width: 1024px;
-    grid-template-rows: auto auto 1fr auto;
-    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: auto auto auto auto;
+    grid-template-columns: 1fr 1fr;
     grid-template-areas: 
-      "header header header"
-      "hero hero hero"
-      "main main main"
-      "footer footer footer";
+      "header header"
+      "hero hero"
+      "main main"
+      "footer footer";
   }
 
   main {
     flex-direction: row;
     gap: 24px;
   }
-} */
+}

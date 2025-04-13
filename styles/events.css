@@ -68,7 +68,6 @@
   overflow: hidden;
   text-align: left;
   transition: opacity 0.3s ease;
-  
 }
 
 .event-card.hidden {
@@ -108,7 +107,6 @@
   font: var(--p-06);
   color: var(--text-color-06);
   margin-bottom: 12px;
-
 }
 
 .carousel-btn {
@@ -165,6 +163,7 @@
 .event-card {
   position: relative;
 }
+
 .event-register-btn {
   display: inline-block;
   margin-top: 12px;
@@ -181,7 +180,12 @@
   background-color: #5e3b2e;
 }
 
-@media (max-width: 768px) {
+@media (min-width: 768px) and (max-width: 1000px) {
+  #events {
+    max-width: 100%;
+    background: blue;
+  }
+
   .event-card {
     width: 100%;
     max-width: 375px;
