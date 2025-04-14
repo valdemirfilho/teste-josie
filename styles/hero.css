@@ -136,5 +136,12 @@
 }
 
 @media (min-width: 1024px) {
-  
+  .wrapper-hero{
+    max-width: 550px;
+    padding: 36px 0 24px 96px;
+  }
+
+  .wrapper-btn-hero{
+    flex-direction: row;
+  }
 }

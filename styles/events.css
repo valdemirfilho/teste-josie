@@ -181,10 +181,29 @@
   background-color: #5e3b2e;
 }
 
+@media (min-width: 1020px) {
+  #events {
+    max-width: 100%;
+  }
+
+  .event-card {
+    max-width: 1440px;
+    height: 100%;
+  }
+  .carousel-track {
+    overflow-x: scroll;
+    scroll-snap-type: x mandatory;
+    -webkit-overflow-scrolling: touch;
+  }
+  .carousel-btn {
+    /* display: none; */
+  }
+}
+
+
 @media (min-width: 768px) and (max-width: 1000px) {
   #events {
     max-width: 100%;
-    background: blue;
   }
 
   .event-card {
@@ -283,7 +302,6 @@
   cursor: pointer;
   transition: background-color 0.3s ease;
 }
-
 #form-inscricao button:hover {
   background-color: #5e3b2e;
 }

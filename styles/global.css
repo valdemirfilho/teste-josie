@@ -109,7 +109,7 @@ h1, h2, h3, p, a, span{
   font-family: inherit
 }
 
-@media (min-width: 768px)and (max-width: 1000px) {
+@media (min-width: 768px)and (max-width: 1440px) {
   :root{
     --h1-01: 400 30px/100% var(--ff-01);
     --h1-02: 400 42px/100% var(--ff-01);
@@ -125,7 +125,9 @@ h1, h2, h3, p, a, span{
 
     --btn-01: 500 16px/200% var(--ff-04);
   }
+}
 
+@media (min-width: 768px)and (max-width: 1000px) {
   #content {
     width: 100%;
     max-width: 1000px;
@@ -133,8 +135,17 @@ h1, h2, h3, p, a, span{
 }
 
 @media (min-width: 1024px) {
+  :root{
+    --h1-01: 400 42px/100% var(--ff-01);
+    --h1-02: 400 42px/100% var(--ff-01);
+
+    --p-01: 300 18px/150% var(--ff-03);
+    
+  }
+  
   #content {
-    max-width: 1024px;
+    max-width: 1440px;
+    
     grid-template-rows: auto auto auto auto;
     grid-template-columns: 1fr 1fr;
     grid-template-areas: 

@@ -146,5 +146,35 @@
 }
 
 @media (min-width: 1024px) {
+  #services{
+    max-width: 100vw;
+    max-height: 100vh;
+  }
+
+  .wrapper-myMission{
+    height: 400px;
+    padding: 0;
+  
+    >h1, p{
+      width: 750px;
+    }
+  }
+
+  .wrapper-services{
+    max-width: 1440px;
+    padding: 96px;
+    gap: 32px;
+
+    >h1{
+      text-align: center;
+    }
+  }
+
+  .wrapper-card-service{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 32px;
+  }
+
   
 }
