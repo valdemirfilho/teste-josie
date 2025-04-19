@@ -1,58 +1,58 @@
 #services{
-  width: 100%;
-  max-width: 375px;
-  height: 100%;
-  
-  background: var(--bg-03);
+  padding: 0 24px;
 }
 
-.wrapper-myMission{
-  background: var(--text-color-02);
+.info-services{
   width: 100%;
-  height: 300px;
-  padding: 24px;
+  height: 100%;
+  background: var(--bg-04);
+  padding: 48px 24px;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.content-info-services{
+  width: 250px;
+  height: 100%;
+
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   gap: 16px;
-
-  >h1, p{
-    width: 272px;
-  }
 }
 
-.text-title-white, .text-title-white-italic{
-  font: var(--h1-03);
-  color: var(--text-color-01);
-}
-
-.text-title-white .text-title-white-italic{
-  font-style: italic;
-}
-
-.text-myMission{
-  font: var(--p-04);
-  color: var(--text-color-05);
-}
-
-.wrapper-services{
-  display: flex;
-  flex-direction: column;
-  gap: 16px; 
+.content-services{
+  box-sizing: border-box;
+  background: var(--bg-02);
+  border-radius: 16px;
   padding: 24px;
 
+}
+#services{
   width: 100%;
-  max-width: 375px;
   height: 100%;
+  background: var(--bg-04);
+  display: flex;
+  justify-content: center;
+  box-sizing: border-box;
+  
+  padding-bottom: 96px;
+}
+
+.wrapper-services{  
+  display: flex;  
+  flex-direction: column;
+  align-items: center;
+  gap: 16px;
 }
 
 .wrapper-card-service{
-  border-radius: 16px 16px 0px 0px;
-
   display: flex;
   flex-direction: column;
-  gap: 16px;
+  gap: 32px;
 }
 
 .card-service{
@@ -62,119 +62,75 @@
 
   border-radius: 16px;
   padding: 0 0 16px 0;
-
   background: var(--bg-05);
 }
 
-.title-text-card-service{
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
+.wrapper-text-card{
   padding: 0 16px;
-}
-
-.text-card-service{
-  font: var(--p-06);
-  color: var(--text-color-06);
-  width: 200px;
-  margin-left: 16px;
-}
-
-.subtitle-card-service{
-  font: var(--p-05);
-  color: var(--text-color-02);
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
 }
 
 .btn-card-service{
-  width: 122px;
+  width: 140px;
   height: 34px;
+  
+  border-radius: 16px;
+  background: var(--bg-04);
+  color: var(--text-color-03);
 
   display: flex;
   align-items: center;
   justify-content: center;
   gap: 8px;
-  margin-left: 16px;
-  border-radius: 16px;
 
-  text-decoration: none;
-  background: var(--bg-02); 
-
-  >span{
-    color: var(--text-color-05);
-    font: var(--btn-02);
-  }
+  font-family: var(--ff-04);
+  font-size: 12px;
+  font-weight: 700;
+  line-height: 150%;
 }
 
 @media (min-width: 768px) and (max-width: 1000px) {
-  #services{
-    max-width: 1000px;
-  }
-
-  .wrapper-myMission{
-    >h1, p{
-      width: 768px;
-    }
-  }
-
-  .text-title-white, .text-title-white-italic{
-    font: var(--h1-03);
-  }
-
-  .text-card-service{
-    width: 270px;
-  }
-
-  .text-myMission{
-    font: var(--p-01);
-  }
-
-  .wrapper-services{
-    max-width: 1000px;
-    padding: 48px;
-    gap: 32px;
-
-    >h1{
-      text-align: center;
-    }
-  }
-
   .wrapper-card-service{
     display: grid;
     grid-template-columns: repeat(2, 1fr);
+  }
+
+  .wrapper-services{  
     gap: 32px;
+  }
+  .card-service{
+    width: 280px
+  }
+
+  .content-info-services{
+    width: 100%;
+    padding: 64px 48px;
   }
 }
 
-@media (min-width: 1024px) {
-  #services{
-    max-width: 100vw;
-    max-height: 100vh;
-  }
+@media (min-width: 1000px) {
 
-  .wrapper-myMission{
-    height: 400px;
-    padding: 0;
-  
-    >h1, p{
-      width: 750px;
-    }
-  }
-
-  .wrapper-services{
-    max-width: 1440px;
-    padding: 96px;
+  .wrapper-services{  
     gap: 32px;
-
-    >h1{
-      text-align: center;
-    }
   }
 
   .wrapper-card-service{
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 32px;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 36px;
+    max-width: 100%;
+    box-sizing: border-box;
+    justify-content: center;
   }
 
-  
+  .card-service{
+    width: 280px
+  }
+
+  .content-info-services{
+    width: 100%;
+    padding: 64px 48px;
+  }
 }
