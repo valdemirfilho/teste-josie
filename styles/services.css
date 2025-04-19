@@ -1,5 +1,7 @@
 #services{
   padding: 0 24px;
+  display: flex;
+  flex-direction: column;
 }
 
 .info-services{
@@ -92,6 +94,9 @@
 }
 
 @media (min-width: 768px) and (max-width: 1000px) {
+  #services{
+    padding: 48px;
+  }
   .wrapper-card-service{
     display: grid;
     grid-template-columns: repeat(2, 1fr);
@@ -111,7 +116,9 @@
 }
 
 @media (min-width: 1000px) {
-
+  #services{
+    padding: 0 72px 72px;
+  }
   .wrapper-services{  
     gap: 32px;
   }
@@ -132,5 +139,12 @@
   .content-info-services{
     width: 100%;
     padding: 64px 48px;
+  }
+  .modern-contact-image{
+    width: 400px;
+  }
+
+  .modern-contact-image img{
+    width: 400px;
   }
 }

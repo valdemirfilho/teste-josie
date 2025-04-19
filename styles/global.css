@@ -45,7 +45,7 @@ body{
 }
 
 #content{
-  max-width: 760px;
+  max-width: 100%;
   margin: 0 auto;
 }
 
@@ -145,7 +145,7 @@ body{
 /* services */
 .text-info-services{
   color: var(--text-color-03);
-  font-family: Ubuntu;
+  font-family:var(--ff-03);
   font-size: 14px;
   font-style: normal;
   font-weight: 300;
@@ -328,10 +328,6 @@ body{
 }
 
 @media (min-width: 768px) and (max-width: 1000px) {
-  #content {
-    max-width: 1024px;
-  }
-
   .text-logo{
     font-size: 38px;
   }
@@ -364,6 +360,20 @@ body{
     font-size: 18px;
   }
 
+  .text-feedback{
+    font-size: 18px;
+  }
+
+  .text-card-feedback{
+    font-size: 14px;
+  }
+
+  .text-user-feedback, .text02-user-feedback{
+    font-size: 14px;
+  }
+  
+  
+
   /* footer */
   .text-link-footer{
     font-size: 16px;
@@ -387,10 +397,7 @@ body{
 }
 
 @media (min-width: 1001px) {
-  #content {
-    max-width: 1380px;
-    padding: 0 48px;
-  }
+
   
   /* variable */
   .text-hero-title{
@@ -418,10 +425,18 @@ body{
     font-size: 18px;
   }
 
-  header{
-    min-height: 80px;
+  .text-feedback{
+    font-size: 18px;
   }
 
+  .text-card-feedback{
+    font-size: 14px;
+  }
+
+  .text-user-feedback, .text02-user-feedback{
+    font-size: 14px;
+  }
+  
   /* footer */
   .text-link-footer{
     font-size: 16px;
