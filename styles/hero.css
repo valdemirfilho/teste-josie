@@ -110,7 +110,7 @@
   backdrop-filter: blur(4px);
 }
 
-@media (height <=600px) {
+@media (height < 640px) {
   #hero {
     height: auto;
   }
@@ -126,7 +126,7 @@
   }
 
   .text-hero {
-    font-size: clamp(18px, 1rem + 1vh, 1.5rem);
+    font-size: clamp(18px, 0.8rem + 1vh, 1.5rem);
   }
 
   .wrapper-btn-hero {
