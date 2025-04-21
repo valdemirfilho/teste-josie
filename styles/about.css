@@ -19,6 +19,7 @@
   font-style: normal;
   font-weight: 400;
   line-height: 100%;
+  text-align: center;
 }
 
 .about-title-italic {
@@ -109,6 +110,7 @@
 @media (width > 899px) {
   .text-title {
     font-size: 2.5rem;
+    text-align: left;
   }
 
   .list-about-feature {

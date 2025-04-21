@@ -16,6 +16,11 @@
   align-items: center;
 }
 
+.text-logo {
+  font-family: var(--ff-01);
+  font-weight: 400;
+}
+
 .img-logo img {
   width: 100%;
 }
