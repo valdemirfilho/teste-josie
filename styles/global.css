@@ -49,19 +49,19 @@ a {
   color: inherit;
 }
 
-#content {
+/* #content {
   max-width: 100%;
   margin: 0 auto;
-}
+} */
 
-.content-main {
+/* .content-main {
   display: flex;
   flex-direction: column;
   align-items: center;
-}
+} */
 
 /* variable */
-.text-title,
+/* .text-title,
 .text-title-italic,
 .text-title-white,
 .text-title-white-italic {
@@ -71,7 +71,7 @@ a {
   font-style: normal;
   font-weight: 400;
   line-height: 100%;
-}
+} */
 
 .text-title-white,
 .text-title-white-italic {
@@ -100,37 +100,7 @@ a {
 }
 
 /* about */
-.text-about {
-  color: var(--text-color-04);
-  font-family: var(--ff-03);
-  font-size: 14px;
-  font-weight: 300;
-  line-height: 150%;
-}
 
-.about-title-italic {
-  color: var(--text-color-01);
-
-  font-family: var(--ff-01);
-  font-size: 28px;
-  font-style: italic;
-  font-weight: 300;
-  line-height: 100%;
-  text-align: center;
-}
-
-.text-bold-about {
-  color: var(--text-color-05);
-  font-weight: 400;
-}
-
-.text-feature {
-  color: var(--text-color-04);
-  font-family: var(--ff-03);
-  font-size: 14px;
-  font-weight: 300;
-  line-height: 125%;
-}
 
 /* services */
 .text-info-services {
@@ -320,7 +290,7 @@ a {
   line-height: 125%;
 }
 
-@media (min-width: 768px) and (max-width: 1000px) {
+/* @media (min-width: 768px) and (max-width: 1000px) {
   .text-logo {
     font-size: 38px;
   }
@@ -367,12 +337,12 @@ a {
   .text-user-feedback,
   .text02-user-feedback {
     font-size: 14px;
-  }
+  } */
 
 
 
-  /* footer */
-  .text-link-footer {
+/* footer */
+/* .text-link-footer {
     font-size: 16px;
   }
 
@@ -391,13 +361,13 @@ a {
   .dev-site {
     font-size: 12px;
   }
-}
+} */
 
-@media (min-width: 1001px) {
+/* @media (min-width: 1001px) { */
 
 
-  /* variable */
-  .text-hero-title {
+/* variable */
+/* .text-hero-title {
     font-size: 42px;
   }
 
@@ -438,10 +408,10 @@ a {
   .text-user-feedback,
   .text02-user-feedback {
     font-size: 14px;
-  }
+  } */
 
-  /* footer */
-  .text-link-footer {
+/* footer */
+/* .text-link-footer {
     font-size: 16px;
   }
 
@@ -457,4 +427,4 @@ a {
   .dev-site {
     font-size: 12px;
   }
-}
+} */
