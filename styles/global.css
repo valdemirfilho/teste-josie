@@ -1,10 +1,10 @@
-*{
+* {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 
-:root{
+:root {
   /* color */
   --text-color-base: #fff;
   --text-color-01: #CF7956;
@@ -25,38 +25,46 @@
   --bg-07: #6D2E2E;
   --bg-08: #ad725b;
   /* font-family */
-  --ff-01: "Playfair", serif;
+  --ff-01: "Playfair Display", serif;
   --ff-02: "Poppins", sans-serif;
   --ff-03: "Ubuntu", sans-serif;
   --ff-04: 'Inter', sans-serif;
 }
 
-/* global */
-a{
-  text-decoration: none;
-  color: inherit;
+html,
+body {
+  scroll-behavior: smooth;
 }
 
-body{
-  width: 100vw;
+/* global */
+body {
+  width: 100%;
   height: 100vh;
   /* background: rgba(239, 217, 193, 0.5); */
   background: var(--bg-05);
 }
 
-#content{
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+#content {
   max-width: 100%;
   margin: 0 auto;
 }
 
-.content-main{
+.content-main {
   display: flex;
   flex-direction: column;
   align-items: center;
 }
 
 /* variable */
-.text-title, .text-title-italic, .text-title-white, .text-title-white-italic {
+.text-title,
+.text-title-italic,
+.text-title-white,
+.text-title-white-italic {
   color: var(--text-color-01);
   font-family: var(--ff-01);
   font-size: 24px;
@@ -65,52 +73,34 @@ body{
   line-height: 100%;
 }
 
-.text-italic, .text-title-white-italic {
-  font-style: italic;
-}
-.text-title-white, .text-title-white-italic {
+.text-title-white,
+.text-title-white-italic {
   color: var(--text-color-base);
 }
 
 /* header */
-.text-logo{
+.text-logo {
   font-weight: 400;
   font-size: 20px;
   line-height: 100%;
   font-family: var(--ff-01);
 }
 
-.text-menu-list-header{
+.text-menu-list-header {
   font-size: 20px;
   line-height: 100%;
   font-family: var(--ff-04);
 }
 
 /* hero */
-.text-hand-hero{
+.text-hand-hero {
   color: #FFF;
   font-family: var(--ff-02);
   font-size: 12px;
 }
 
-.text-hero-title{
-  color: var(--text-color-02);
-  font-family: var(--ff-01);
-  font-size: 24px;
-  font-weight: 400;
-  line-height: 100%;
-}
-
-.text-hero{
-  color: var(--text-color-03);
-  font-family: var(--ff-03);
-  font-size: 14px;
-  font-weight: 300;
-  line-height: 150%;
-}
-
 /* about */
-.text-about{
+.text-about {
   color: var(--text-color-04);
   font-family: var(--ff-03);
   font-size: 14px;
@@ -118,7 +108,7 @@ body{
   line-height: 150%;
 }
 
-.about-title-italic{
+.about-title-italic {
   color: var(--text-color-01);
 
   font-family: var(--ff-01);
@@ -129,12 +119,12 @@ body{
   text-align: center;
 }
 
-.text-bold-about{
+.text-bold-about {
   color: var(--text-color-05);
   font-weight: 400;
 }
 
-.text-feature{
+.text-feature {
   color: var(--text-color-04);
   font-family: var(--ff-03);
   font-size: 14px;
@@ -143,52 +133,54 @@ body{
 }
 
 /* services */
-.text-info-services{
+.text-info-services {
   color: var(--text-color-03);
-  font-family:var(--ff-03);
+  font-family: var(--ff-03);
   font-size: 14px;
   font-style: normal;
   font-weight: 300;
-  line-height: 150%; 
+  line-height: 150%;
 }
 
-.title-text-card-service{
+.title-text-card-service {
   display: flex;
   justify-content: space-between;
   align-items: center;
 
-  >img{
+  >img {
     width: 32px;
     height: 32px;
   }
 }
 
-.subtitle-card-service, .subtitle-card-event{
+.subtitle-card-service,
+.subtitle-card-event {
   color: var(--text-color-01);
   font-family: var(--ff-03);
   font-size: 18px;
   font-weight: 500;
-  line-height: 125%; 
+  line-height: 125%;
 }
 
-.text-card-service, .text-card-event{
+.text-card-service,
+.text-card-event {
   color: var(--text-color-06);
   font-family: var(--ff-04);
   font-size: 14px;
   font-weight: 400;
-  line-height: 150%; 
+  line-height: 150%;
 }
 
 /* event */
-.text-location-event{
+.text-location-event {
   color: var(--text-color-06);
   font-family: var(--ff-04);
   font-size: 12px;
   font-weight: 300;
-  line-height: 150%; 
+  line-height: 150%;
 }
 
-#modal-title{
+#modal-title {
   color: var(--text-color-01);
   font-family: var(--ff-01);
   font-size: 24px;
@@ -198,7 +190,7 @@ body{
 }
 
 /* Info Video */
-.text-info-video{
+.text-info-video {
   color: var(--text-color-03);
   font-family: var(--ff-03);
   font-size: 16px;
@@ -231,7 +223,7 @@ body{
 }
 
 /* Feedbacks */
-.text-feedback{
+.text-feedback {
   color: var(--text-color-04);
   font-family: var(--ff-03);
   font-size: 14px;
@@ -240,17 +232,17 @@ body{
   max-width: 810px;
 }
 
-.text-card-feedback{
+.text-card-feedback {
   color: var(--text-color-06);
   text-align: center;
   font-family: var(--ff-02);
   font-size: 12px;
   font-weight: 300;
-  line-height: 125%; 
+  line-height: 125%;
   letter-spacing: -0.24px;
 }
 
-.text-user-feedback{
+.text-user-feedback {
   color: var(--text-color-07);
   text-align: center;
   font-family: var(--ff-03);
@@ -260,7 +252,7 @@ body{
   letter-spacing: -0.24px;
 }
 
-.text02-user-feedback{
+.text02-user-feedback {
   color: var(--text-color-08);
   text-align: center;
   font-family: var(--ff-03);
@@ -271,7 +263,7 @@ body{
 }
 
 /* Contact */
-.modern-contact-container{
+.modern-contact-container {
   display: flex;
   flex-direction: column;
   gap: 32px;
@@ -279,13 +271,14 @@ body{
   justify-content: center;
   margin-top: 32px;
 }
-.modern-contact-form{
+
+.modern-contact-form {
   display: flex;
   flex-direction: column;
   gap: 16px;
 }
 
-.text-contact{
+.text-contact {
   color: var(--text-color-04);
   font-family: var(--ff-03);
   font-size: 14px;
@@ -294,7 +287,7 @@ body{
 }
 
 /* footer */
-.text-link-footer{
+.text-link-footer {
   color: var(--text-color-03);
   font-family: var(--ff-03);
   font-size: 14px;
@@ -302,7 +295,7 @@ body{
   line-height: 125%;
 }
 
-.company-id{
+.company-id {
   color: var(--text-color-03);
   font-family: var(--ff-03);
   font-size: 14px;
@@ -310,7 +303,7 @@ body{
   line-height: 125%;
 }
 
-.text-copyright{
+.text-copyright {
   color: var(--text-color-03);
   font-family: var(--ff-03);
   font-size: 14px;
@@ -318,7 +311,7 @@ body{
   line-height: 125%;
 }
 
-.dev-site{
+.dev-site {
   color: rgba(255, 255, 255, 0.50);
   text-align: center;
   font-family: var(--ff-03);
@@ -328,130 +321,140 @@ body{
 }
 
 @media (min-width: 768px) and (max-width: 1000px) {
-  .text-logo{
+  .text-logo {
     font-size: 38px;
   }
 
-  .text-hero-title{
+  .text-hero-title {
     font-size: 42px;
   }
 
-  .text-title, .text-title-italic, .text-title-white, .text-title-white-italic {
+  .text-title,
+  .text-title-italic,
+  .text-title-white,
+  .text-title-white-italic {
     font-size: 40px;
   }
 
-  .about-title-italic{
+  .about-title-italic {
     font-size: 44px;
   }
 
-  .text-about{
+  .text-about {
     font-size: 18px;
   }
 
-  .text-bold-about{
+  .text-bold-about {
     font-size: 18px;
   }
 
-  .text-feature{
+  .text-feature {
     font-size: 18px;
   }
 
-  .text-info-services{
+  .text-info-services {
     font-size: 18px;
   }
 
-  .text-feedback{
+  .text-feedback {
     font-size: 18px;
   }
 
-  .text-card-feedback{
+  .text-card-feedback {
     font-size: 14px;
   }
 
-  .text-user-feedback, .text02-user-feedback{
+  .text-user-feedback,
+  .text02-user-feedback {
     font-size: 14px;
   }
-  
-  
+
+
 
   /* footer */
-  .text-link-footer{
+  .text-link-footer {
     font-size: 16px;
   }
 
-  .company-id{
+  .company-id {
     color: var(--text-color-03);
     font-family: var(--ff-03);
     font-size: 14px;
     font-weight: 300;
     line-height: 125%;
   }
-  
-  .text-copyright{
+
+  .text-copyright {
     font-size: 14px;
   }
 
-  .dev-site{
+  .dev-site {
     font-size: 12px;
   }
 }
 
 @media (min-width: 1001px) {
 
-  
+
   /* variable */
-  .text-hero-title{
+  .text-hero-title {
     font-size: 42px;
   }
 
-  .text-title, .text-title-italic, .text-title-white, .text-title-white-italic {
+  .text-title,
+  .text-title-italic,
+  .text-title-white,
+  .text-title-white-italic {
     font-size: 48px;
   }
 
-  .about-title-italic{
+  .about-title-italic {
     font-size: 48px;
   }
 
-  .text-about, .text-bold-about, .text-feature{
+  .text-about,
+  .text-bold-about,
+  .text-feature {
     font-size: 20px;
     line-height: 130%;
   }
 
-  .text-feature{
+  .text-feature {
     line-height: 150%;
   }
 
-  .text-info-services{
+  .text-info-services {
     font-size: 18px;
   }
 
-  .text-feedback{
+  .text-feedback {
     font-size: 18px;
   }
 
-  .text-card-feedback{
+  .text-card-feedback {
     font-size: 14px;
   }
 
-  .text-user-feedback, .text02-user-feedback{
+  .text-user-feedback,
+  .text02-user-feedback {
     font-size: 14px;
   }
-  
+
   /* footer */
-  .text-link-footer{
+  .text-link-footer {
     font-size: 16px;
   }
 
-  .company-id{
+  .company-id {
     font-size: 16px;
   }
 
-  
-  .text-copyright{
+
+  .text-copyright {
     font-size: 14px;
   }
 
-  .dev-site{
+  .dev-site {
     font-size: 12px;
   }
 }
