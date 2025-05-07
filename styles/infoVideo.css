@@ -2,35 +2,122 @@
   position: relative;
   width: 100%;
   margin: 0 auto;
-  overflow: hidden;
+  /* overflow: hidden; */
+
+  .text-title {
+    font-size: 2rem;
+    color: var(--text-color-01);
+    font-family: var(--ff-01);
+    font-family: 'Playfair Display';
+    font-optical-sizing: auto;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 125%;
+    text-align: center;
+    padding-bottom: 12px;
+  }
+
+  .text-title-italic {
+    font-style: italic;
+  }
+
+  .text-info-video {
+    font-family: var(--ff-03);
+    font-size: 18px;
+    font-weight: 300;
+    line-height: 1.5;
+    color: var(--text-color-03);
+    text-align: center;
+  }
+
+  .text-info-video-italic {
+    font-style: italic;
+    font-family: var(--ff-03);
+    font-size: 18px;
+    font-weight: 300;
+    line-height: 1.8;
+    color: var(--text-color-base);
+    text-align: center;
+  }
 }
 
 #bg-video {
-  position: absolute;
-  top: 0;
-  left: 0;
+  /* position: absolute; */
+  height: auto;
   width: 100%;
-  height: 100%;
+  /* z-index: 0; */
+  height: 600px;
+  /* max-width: 1280px; */
   object-fit: cover;
-  z-index: 0;
 }
 
 #content-info-video {
-  position: relative;
-  z-index: 1;
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  /* z-index: 1; */
   background: rgba(0, 0, 0, 0.5);
+  height: auto;
 
   display: flex;
   flex-direction: column;
+  justify-content: center;
   gap: 16px;
   text-align: left;
 
-  padding: 56px 24px;
+  padding-inline: 16px;
   color: var(--text-color-03);
 }
 
+
+@media (height <=640px) {
+  #bg-video {
+    height: 100dvh;
+  }
+}
+
+@media (width >=40em) {
+  #info-video {
+    #content-info-video {
+      /* max-width: 1280px; */
+      gap: 32px;
+    }
+
+    .text-title {
+      font-size: 48px;
+    }
+
+    .text-info-video {
+      font-size: 24px;
+    }
+
+    .text-info-video-italic {
+      font-size: 24px;
+    }
+
+  }
+}
+
+@media (width >=64em) {
+  #info-video {
+    .wrapper-text-info {
+      max-width: 1280px;
+      margin-inline: auto;
+    }
+
+    .text-title {
+      font-size: 48px;
+      margin-bottom: 32px;
+    }
+
+    #bg-video {
+      height: 800px;
+    }
+  }
+}
+
 /* Tablet */
-@media (min-width: 768px) and (max-width: 1024px) {
+/* @media (min-width: 768px) and (max-width: 1024px) {
   #content-info-video {
     padding: 72px 40px;
     text-align: center;
@@ -47,10 +134,10 @@
   .text-info-video-italic {
     font-size: 15px;
   }
-}
+} */
 
 /* Desktop */
-@media (min-width: 1025px) {
+/* @media (min-width: 1025px) {
   #content-info-video {
     padding: 100px 80px;
     text-align: center;
@@ -69,4 +156,4 @@
   .text-info-video-italic {
     font-size: 16px;
   }
-}
+} */

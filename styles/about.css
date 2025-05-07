@@ -80,7 +80,8 @@
   gap: 8px;
 }
 
-@media (width > 599px) {
+/* TABLET */
+@media (width >=40rem) {
   #about {
     padding-inline: 64px;
   }
@@ -88,34 +89,22 @@
   .icon-about {
     flex: 0 0 24px;
   }
-}
 
-@media (width > 699px) {
   .wrapper-about {
     display: flex;
     gap: 16px;
     padding-block: 32px;
   }
-
-  .wrapper-about-img {
-    padding-block: 0;
-    flex: 1;
-  }
-
-  .list-about-feature {
-    flex: 1;
-  }
 }
 
-@media (width > 899px) {
-  .text-title {
+@media (width >=64rem) {
+  #about .text-title {
     font-size: 2.5rem;
     text-align: left;
   }
 
-  .list-about-feature {
-    flex: 2;
-    padding-inline-end: 16px;
+  .break-line {
+    display: none;
   }
 
   .text-about,

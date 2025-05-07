@@ -1,0 +1,81 @@
+#events img {
+  width: 100%;
+}
+
+.embla {
+  overflow: hidden;
+  position: relative;
+  width: 100%;
+
+  figure,
+  figcaption {
+    display: grid;
+    gap: 16px;
+    text-align: left;
+  }
+
+  figcaption {
+    padding: 16px;
+  }
+}
+
+.embla__container {
+  display: flex;
+  gap: 16px;
+}
+
+.embla__slide {
+  flex: 0 0 100%;
+  /* padding: 16px; */
+  text-align: center;
+  background: #f0f0f0;
+  border: 2px solid transparent;
+  transition: border-color .3s;
+}
+
+.embla__slide:last-child {
+  margin-right: 16px;
+}
+
+/* Destaque do slide em foco */
+/* .is-selected { */
+/* border-color: red; */
+/* } */
+
+.embla__button {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background: rgba(0, 0, 0, 0.5);
+  color: #fff;
+  border: none;
+  padding: 10px;
+  cursor: pointer;
+}
+
+.embla__button--prev {
+  left: 10px;
+}
+
+.embla__button--next {
+  right: 10px;
+}
+
+.image-card-event {
+  width: 100%;
+  object-fit: cover;
+  height: 350px;
+}
+
+
+@media (width >=40em) {
+  .embla__slide {
+    flex: 0 0 70%;
+  }
+}
+
+@media (width >=64em) {
+  .embla__slide {
+    flex: 0 0 30%;
+  }
+}
